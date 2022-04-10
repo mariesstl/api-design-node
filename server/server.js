@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var api = require('./api/api');
+var api = require('./api/api'); //this is a just a router called api
 
 // setup the app middlware
 require('./middleware/appMiddlware')(app);
