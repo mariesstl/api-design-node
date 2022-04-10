@@ -3,7 +3,7 @@ var request = require('supertest');
 var expect = require('chai').expect;
 
 // TODO: make tests for the other CRUD routes
-// DELETE, UPDATE, PUT, GET ONE
+// DELETE, PUT, POST, GET ONE
 // to run the test type mocha server/specs.js
 
 describe('[LIONS]', function(){
