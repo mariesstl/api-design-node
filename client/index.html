@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" >
+<html lang="en">
 <head>
   <title>Lions</title>
   <link rel="stylesheet" href="style.css">
@@ -11,7 +13,7 @@
 
     <form name="lions">
       <div class="textbox">
-        <input
+        <label for="lionname"></label><id="lionname" input
           type="text"
           required
           name="lion-name"/>
@@ -21,7 +23,7 @@
       </div>
 
     <div class="textbox">
-      <input
+      <label for="lionpride"></label><id="lionpride" input
         type="text"
         required
         name="lion-pride"/>
@@ -31,8 +33,8 @@
     </div>
 
 
-    <input type="number" name="lion-age">
-    <select name="select">
+    <label for="lionagee"></label><id="lionage"input type="number" name="lion-age">
+      <label for="liongender">Gender:<select name="select"></label>
       <option value="female" selected>female</option>
       <option value="male">male</option>
     </select>
