@@ -16,9 +16,12 @@ var envConfig;
 // and fallback to an empty object if it does error out
 try {
   envConfig = require('./' + config.env);
+  // console.log('Environment: ' + config.env);
+  // console.log('Port: ' + config.port);
   // just making sure the require actually
   // got something back :)
   envConfig = envConfig || {};
+  // console.log('envConfig: ' + JSON.stringify(envConfig));
 } catch(e) {
   envConfig = {};
 }
@@ -28,3 +31,7 @@ try {
 // on the config object
 // with merge whatever is on the right is added to and overwrites the left item
 module.exports = _.merge(config, envConfig);
+
+
+
+
