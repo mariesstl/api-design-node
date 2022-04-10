@@ -66,7 +66,7 @@ app.put('/lions/:id', function(req, res) {
 
 app.use(function(err, req, res, next) {
   if (err) {
-    res.status(500).send(error);
+    res.status(500).send(err);
   }
 });
 
