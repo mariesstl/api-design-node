@@ -20,12 +20,6 @@ app.use(express.static('../client'));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-app.use(function(err, req, res, next) {
-  if (err) {
-    res.status(500).send(error);
-  }
-});
-
 app.param('id', function(req, res, next, id) {
   var lion = _.find(lions, {id: id});
 
@@ -67,6 +61,12 @@ app.put('/lions/:id', function(req, res) {
   } else {
     var updatedLion = _.assign(lions[lion], update);
     res.json(updatedLion);
+  }
+});
+
+app.use(function(err, req, res, next) {
+  if (err) {
+    res.status(500).send(error);
   }
 });
 
