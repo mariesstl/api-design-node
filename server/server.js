@@ -13,7 +13,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
 var _ = require('lodash');
-var morgan = require('morgan');
+var morgan = require('morgan'); //logs every request that is coming in
 
 var lions = [];
 var id = 0;
