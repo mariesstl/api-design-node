@@ -26,4 +26,5 @@ try {
 // merge the two config files together
 // the envConfig file will overwrite properties
 // on the config object
+// with merge whatever is on the right is added to and overwrites the left item
 module.exports = _.merge(config, envConfig);
